@@ -1,0 +1,424 @@
+﻿html {
+    width:100vw;
+    overflow-x:hidden;
+}
+body {
+	font-family: Roboto, sans serif;
+	color: #efefef;
+	background-color: #efefef;
+	margin: 0;
+	padding: 0;
+	font-size: 1em;
+}
+div.titulo_farmaco {
+	padding: 8px 0 6px 20px;
+	background-color: #4f5478;
+	margin: 0 0 0 0;
+	cursor: pointer;
+	border-bottom: 1px solid #9497ad;
+}
+.titulo_farmaco.nao_disponivel{
+	background-color: #d4d4d4;
+	font-size: 0.9em;
+}
+	.titulo_farmaco.nao_disponivel span.nome_farmaco, .titulo_farmaco.nao_disponivel span.posologia_base{
+		color: #f9f9f9;
+		font-weight: normal;
+	}
+.titulo_farmaco.nao_disponivel:after{
+	content: ' Indisponível';
+	color: #7e7e7e;
+	text-transform: uppercase;
+	font-size: 0.9em;
+}
+.titulo_farmaco.nao_disponivel:hover{
+	cursor: not-allowed;
+}
+
+div.farmacos div.linha1{
+	
+	border-radius: 0 0 4px 4px;
+	padding: 0 0px 0 0px;
+	margin: 6px 0 0 0;
+	overflow: hidden;
+}
+	div.farmacos div.linha1:before {
+		content: '1ª linha';
+		font-size: 0.95em;
+		font-weight: 300;
+		color: white;
+		padding: 4px 20px 4px 20px;
+		background-color: #f5a623;
+		display: inline-block;
+	}
+	span.nome_farmaco {
+		font-weight: 700;
+		color: #fff;
+	}
+	span.nome_farmaco:before {
+		content: '\f0da\00a0';
+		font-family: FontAwesome;
+		color: #fff;
+	}
+	.titulo_farmaco.open_drug span.nome_farmaco:before {
+		content: '\f0d7\00a0';
+	}
+div.patologi
+div.patologia_container {
+
+
+}
+div.patologia_container > div {
+	color: #111;
+	box-shadow: 1px 2px 3px 0px rgba(0,0,0,0.10);
+    border-radius: 6px;
+    padding: 0;
+    overflow: hidden;
+    margin: 5px 0 10px 0;
+    background-color: hsla(232,38%,89%,1);
+    border: 1px solid #404669;
+}
+div.patologia_container div.patologia{
+	padding: 0 30px 0 30px;
+	line-height: 40px;
+    margin: 0;
+    color: #5E6977;
+    background: #fff;
+    font-weight: 500;
+    font-size: 1em;
+}
+
+	div.patologia_container div.patologia h2{
+	    font-size: 1.05em;
+	    text-transform: uppercase;
+	    letter-spacing: 0.1;
+	    margin: 0;
+	    float: left;
+	}
+
+	div.patologia_container div.patologia div.referencias{
+	    float: right;
+	    height: 20px;
+	    margin: 10px 0;
+	    line-height: 21px;
+	    font-size: 0.7em;
+	    text-transform: uppercase;
+
+	}
+	div.patologia_container div.patologia div.referencias a{
+	    float: right;
+	    border: 1px solid grey;
+	    border-radius: 3px;
+	    padding: 0 3px 0 3px;
+	    text-decoration: none;
+	    color: #404669;
+	    font-size: 1em;
+	    font-weight: 500;
+	    margin-left: 5px;
+	    line-height: 16px;
+	}
+	div.patologia_container div.patologia div.referencias a:after{
+	    content: " \f08e ";
+	    font-family: FontAwesome;
+	    font-size: 0.8em;
+	    color: #F5A623;
+	    text-decoration: none;
+	}
+	div.patologia_container div.patologia:after{
+	    content: '';
+    	display: block;
+    	clear: both;
+	}
+div.patologia_container div.farmacos {
+	padding: 0 15px 10px 15px;
+	color: #fff;
+}
+div.farmacos span.posologia_base{
+	color: #d9dbee;
+	text-transform:uppercase;
+	font-size: 0.85em;
+	font-weight: 400;
+	line-height: 20px;
+}
+
+div.posologia_calculada {
+	margin: 0px 0 0px 0px;
+	padding: 3px 0 3px 25px;
+	color: #f3f3f3;
+	font-weight: 400;
+	font-size: 0.9em;
+	background-color: #656b9a;
+}
+
+div.posologia_calculada span.formulacao{
+	font-size: 1em;
+	line-height: 20px;
+	color: #fff;
+	padding: 4px 3px 4px 5px;
+	margin: 4px 5px 4px 0;
+}
+	div.posologia_calculada span.formulacao:before{
+		content: ' \2937 \0020';
+	}
+	div.posologia_calculada span.formulacao:after{
+		content: '\0020 \279C';
+	}
+
+div.titulo_farmaco:hover {
+	cursor: pointer;
+}
+
+div.farmacos div.linha2{
+	
+	border-radius: 0 0 4px 4px;
+	padding: 0 0px 0 0px;
+	margin: 6px 0 0 0;
+	overflow: hidden;
+}
+	div.farmacos div.linha2:before {
+		content: '2ª linha';
+		font-size: 0.95em;
+		font-weight: 300;
+		color: white;
+		 background: #80B354;
+		 padding: 4px 20px 4px 20px;
+		 display: inline-block;
+	}
+
+	div.patologia_container div.farmacos .linha2.amigdalitehs1:before {
+		content: '2ª linha - Hipersensibilidade tipo 1 (anafilaxia, broncospasmo, angioedema, urticária)';
+	}
+	div.patologia_container div.farmacos .linha2.amigdalitehsn1:before {
+		content: '2ª linha - Hipersensibilidade não-tipo 1';
+	}
+    
+.farmaco .titulo, .farmaco .dose, .farmaco .frequencia {
+	padding: 1.2%;
+	text-align: center;
+	color: #fff;
+}
+
+.farmaco.paracetamol .titulo, .farmaco.paracetamol .doses, .farmaco.paracetamol .frequencia, .farmaco.paracetamol .calculos_doses b.dose {background-color: #43A047;} 
+
+.farmaco.ibuprofeno .titulo, .farmaco.ibuprofeno .doses, .farmaco.ibuprofeno .frequencia, .farmaco.ibuprofeno .calculos_doses b.dose {background-color: #FFB300;} 
+
+.farmaco.amoxiclav .titulo, .farmaco.amoxiclav .doses, .farmaco.amoxiclav .frequencia, .farmaco.amoxiclav .calculos_doses b.dose {background-color: #3949AB;} 
+
+
+.farmaco .titulo {
+	font-weight: bold;
+	color: #fff;
+	border-radius: 5px 5px 0 0;
+}
+	.farmaco .titulo span {
+		border-bottom: 1px dotted rgba(255,255,255,0.7);
+	}
+.farmaco .doses {
+	padding: 1% 0;
+	font-size: .9em;
+	width: 50%;
+	background-color: #C8E6C9;
+	color: 	rgba(255, 255, 255, 0.95);
+	float: left;
+}
+.farmaco .frequencia {
+	padding: 1% 0;
+	font-size: .9em;
+	width: 50%;
+	background-color: #C8E6C9;
+	color: 	rgba(255, 255, 255, 0.95);
+	float: right;
+}
+
+.fa-long-arrow-left, .fa-long-arrow-right {
+	color: rgba(255,255,255,0.5);
+}
+
+.calculos_doses {
+	background-color: #f9f9f9;
+}
+	.calculos_doses table {
+		width: 100%;
+		text-align: center;
+		color: #232323;
+		border-collapse: collapse;
+		border-top: 1px solid darkgreen;
+	}
+	.calculos_doses table tr td {
+		padding: 2%;
+	}
+	.calculos_doses tr:nth-child(odd){
+		background-color: rgba(0,0,0,0.1);
+	}
+	.calculos_doses	tr td:nth-child(1) {
+		text-align: right;
+		width: 45%;
+	}
+	.calculos_doses	tr td:nth-child(2) {
+		text-align: center;
+		width: 10%;
+	}
+	.calculos_doses	tr td:nth-child(3) {
+		text-align: left;
+		width: 45%;
+	}
+	.calculos_doses b.dose {
+	    color: #f4fff5;
+	    padding: 3px;
+	    border-radius: 2px;
+	}
+
+
+div#main_container {
+	width: 65%;
+	min-width: 830px;
+	margin: 0 auto;
+	border-radius: 6px;
+	padding: 0;
+}
+div.main_title_bar {
+    border-radius: 6px;
+    /*box-shadow: 1px 2px 3px 0px rgba(0,0,0,0.10);*/
+    padding: 0;
+}
+	h1#page_title {
+		margin: 0 0 0 0;
+		float: left;
+		width: 70%;
+		background-color: #fff;
+    	color: #5E6977;
+    	font-weight: 500;
+		text-align: center;
+		font-size: 1.17em;
+		height: 45px;
+		line-height: 45px;
+		border-radius: 0 0 6px 6px;
+
+	}
+div#peso {
+	width: 30%;
+	float: right;
+	text-align: center;
+	line-height: 50px;
+	height: 45px;
+	background-color: #4f5478;
+}
+
+div#pesquisa_rapida {
+	width: 100%;
+	clear: both;
+	line-height: 50px;
+	position: relative;
+}
+div#fluidos {
+	text-align: center;
+	line-height: 30px;
+	font-size: 0.9em;
+}
+
+table.farmacos {
+	padding: 10px 10px;
+	color: white;
+	border-collapse: collapse;
+	margin: 10px 0 0 0;
+}
+table.farmacos tr {
+	border-bottom: 2px solid #FBFBFB;
+}
+table.farmacos tr td:first-child {
+	width: 25%;
+	text-align: center;
+	line-height: 20px;
+	height: 40px;
+	color: white;
+}
+table.farmacos tr td:nth-child(2) {
+	background-color: #BBDEE8;
+	color: #3C3C3C;
+	padding: 0 10px;
+}
+table.farmacos span.nome {
+	width: 20%;
+	text-align: center;
+	line-height: 40px;
+	height: 40px;
+	color: white;
+}
+
+.farmaco_com_formulacoes span.activa {
+	border-bottom: 1px dotted yellow;
+	font-size: 0.9em;
+	display: inline;
+}
+	.farmaco_com_formulacoes span {
+		display: none;
+	}
+	
+input[name=peso], input[name=peso]:focus {
+	width: 100px;
+	outline: 0;
+	height: 100%;
+	color: black;
+	font-size: 2em;
+	text-align: center;
+	border: 2px solid orange;
+	box-shadow: 0px 0px 3px 2px orange;
+	/*box-shadow: inset 0px 7px 12px -6px rgba(0,0,0,0.75);*/
+	border-radius: 3px;
+}
+
+input[name=barra_pesquisa] {
+	width: 100%;
+	height: 40px;
+	color: #333;
+	font-size: 1.2em;
+	padding: 5px 0 5px 45px;
+	border-radius: 0 0 6px 6px;
+	box-shadow: inset 0px 6px 10px 0px rgba(0,0,0,0.08);
+	border: 1px solid #4f5478;
+	border-top: none;
+}
+
+	input[name=barra_pesquisa]:focus {
+		outline: none;
+		border: 1px solid #f5a623;
+		border-top: none;
+}
+div#pesquisa_rapida i.fa-search {
+	color: black;
+	content: "\f002";
+    font-family: FontAwesome;
+    color: #4f5478;
+    position: absolute;
+    top: 10px;
+    left: 15px;
+    font-size: 1.2em;    
+}
+div#inputs {
+	background-color: #4f5478;
+	/*border-radius: 0 0 6px 6px;*/
+	padding: 5px;
+	clear: both;
+}
+hr.divisoria_ou {
+	width: 95%;
+	text-align: center;
+    border: 0;
+    margin: 0px auto -15px auto;
+}
+	hr.divisoria_ou:after {
+		content: 'ou';
+		font-size: 0.88em;
+	    display: inline-block;
+	    position: relative;
+	    top: -7px;
+	    padding: 0 6px;
+	    border-radius:10px;
+	    color: #ffffff;
+	}
+	.linha1 hr.divisoria_ou:after {
+	    background-color: #f5a623;
+	}
+	.linha2 hr.divisoria_ou:after {
+	    background-color: #80B354;
+	}
