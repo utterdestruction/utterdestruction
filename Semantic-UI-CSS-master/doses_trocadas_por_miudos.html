@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/semantic-ui/2.2.10/semantic.min.css">
+	<script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/semantic-ui/2.2.10/semantic.min.js"></script>
+
+	<link rel="stylesheet" href="calculadora_personalizada.css">
+	<meta charset="UTF-8">
+</head>
+<body>
+	<div class="ui large menu stackable container">
+	  <div class="header item">
+	    Doses Trocadas por Miúdos
+	  </div>
+	</div>
+	<div class="ui container">
+	<div class="ui four column stackable grid">
+	  <div class="one wide column middle aligned computer only"><a class="ui big orange circular label">1</a></div>
+	  <div class="three wide column">
+	      	<div class="ui large fluid right labeled input" style="width:100%;">
+	      		<input class="ui" type="number" placeholder="Peso">
+	      		<div class="ui basic label">
+	      			kg
+	      		</div>
+	      	</div>
+	    </div>
+	  <div class="one wide column middle aligned computer only"><a class="ui big orange circular label">2</a></div>
+	  <div class="eleven wide column">
+	  	<div class="ui search large fluid selection dropdown">
+	  		<div class="text">Pesquise por patologia ou fármaco (p. ex. amoxicilina ou amigdalite)</div>
+	  		<i class="search icon"></i>
+	  		<div class="menu">
+	  			<div class="header">
+	  				<i class="tags icon"></i>
+	  				Fármaco
+	  			</div>
+	  			<div class="item" data-value="amoxicilina">Amoxicilina</div>
+	  			<div class="item">Cefuroxima</div>
+	  			<div class="item">Dimentideno</div>
+	  			<div class="header">
+	  				<i class="tags icon"></i>
+	  				Patologia
+	  			</div>
+	  			<div class="item">Pneumonia</div>
+	  			<div class="item" data-value="amigdalite">Amigdalite</div>
+	  			<div class="item">Otite</div>
+	  		</div>
+	  	</div>
+	  </div>
+	  </div>
+	  </div>
+
+	<div class="ui container  segment" id="contentor_pesquisa">
+
+		<div class="ui grid" id="contentor_farmacos">
+
+			<div class="patologia row" id="amigdalite">
+				<h3 class="ui fluid top attached header">
+					Amigdalite
+				</h3>
+				<div class="ui fluid bottom attached segment">
+					<div class="ui top attached stackable tabular menu">
+						<a class="item active" data-tab="amigdalitefirst">1ª Linha</a>
+						<a class="item" data-tab="amigdalitesecond">Hipersensibilidade tipo 1</a>
+						<a class="item" data-tab="amigdalitethird">Hipersensibilidade não-tipo 1</a>
+					</div>
+					<div class="ui bottom attached tab segment active" data-tab="amigdalitefirst">
+						<div class="ui styled fluid accordion">
+							<div class="active title">
+								<i class="dropdown icon"></i>
+								Amoxicilina
+							</div>
+							<div class="active content">
+								<p>A dog is a type of domesticated animal. Known for its loyalty and faithfulness, it can be found as a welcome guest in many households across the world.</p>
+							</div>
+							<div class="title">
+								<i class="dropdown icon"></i>
+								Penicilina
+							</div>
+							<div class="content">
+								<p>There are many breeds of dogs. Each breed varies in size and temperament. Owners often select a breed of dog that they find to be compatible with their own lifestyle and desires from a companion.</p>
+							</div>		      
+						</div>
+					</div>
+					<div class="ui bottom attached tab segment" data-tab="amigdalitesecond">
+						Second
+					</div>
+					<div class="ui bottom attached tab segment" data-tab="amigdalitethird">
+						Third
+					</div>
+				</div>
+			</div>
+
+
+			<div class="farmaco row" id="dimentideno">
+				<h3 class="ui fluid top attached header">
+					Dimentideno
+				</h3>
+				<div class="ui fluid bottom attached segment">
+					<div class="ui top attached stackable tabular menu">
+						<a class="item active" data-tab="first">Dose Habitual</a>
+						<a class="item" data-tab="second">Hipersensibilidade tipo 1</a>
+						<a class="item" data-tab="third">Hipersensibilidade não-tipo 1</a>
+					</div>
+					<div class="ui bottom attached tab segment active" data-tab="first">
+						<div class="ui styled fluid accordion">
+							<div class="active title">
+								<i class="dropdown icon"></i>
+								Amoxicilina
+							</div>
+							<div class="active content">
+								<p>A dog is a type of domesticated animal. Known for its loyalty and faithfulness, it can be found as a welcome guest in many households across the world.</p>
+							</div>
+							<div class="title">
+								<i class="dropdown icon"></i>
+								Penicilina
+							</div>
+							<div class="content">
+								<p>There are many breeds of dogs. Each breed varies in size and temperament. Owners often select a breed of dog that they find to be compatible with their own lifestyle and desires from a companion.</p>
+							</div>		      
+						</div>
+					</div>
+					<div class="ui bottom attached tab segment" data-tab="second">
+						Second
+					</div>
+					<div class="ui bottom attached tab segment" data-tab="third">
+						Third
+					</div>
+				</div>
+			</div>
+	</div>
+
+	</div>
+	
+	<script type="text/javascript">
+		$('.ui.dropdown').dropdown({
+			fullTextSearch:	true,
+			forceSelection: false,
+			onChange: function(value, text, selectedItem) {
+				var opcaoselecionada = value;
+				$('#contentor_farmacos>div').hide().filter("#"+opcaoselecionada).show();
+				/*$("#contentor_farmacos #"+opcaoselecionada).show();*/
+				console.log("Value:"+value+" Text:"+text+" selectedItem:"+selectedItem);
+			}
+
+		});
+
+		$('.menu .item').tab();
+		$('.ui.accordion').accordion({
+			duration: 100
+		});
+	</script>
+</body>
+</html>

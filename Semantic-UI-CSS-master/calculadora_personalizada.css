@@ -1,0 +1,26 @@
+body {
+	background-color: #f4f7fa;
+}
+#contentor_pesquisa {
+	background-color: transparent;
+	border: none;
+	box-shadow: none;
+}
+.passo {
+	background-color: #ff974a!important;
+	border-radius: 100%;
+	color: #fff;
+	font-size: 1.6em;
+	font-weight: lighter;
+	width: 40px;
+	height: 40px;
+	line-height: 40px;
+	text-align: center;
+}
+.ui.dropdown .menu .selected.item {
+	background: rgb(255, 151, 74);
+    color: rgb(255, 255, 255);
+}
+#contentor_farmacos .farmaco, #contentor_farmacos .patologia  {
+	display: none;
+}

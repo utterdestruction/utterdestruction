@@ -1,0 +1,47 @@
+.farmacosesquerda {
+    padding-right: 0!important;
+    ba
+  }
+  .farmacosesquerda .ui.vertical.tabular.menu .active.item {
+    background-color: #e2f3f9;
+    border: none;
+  }
+    .farmacosesquerda .ui.vertical.tabular.menu {
+        border: none;
+  }
+.posologiasdireita {
+    padding-left: 0!important;
+}
+
+.contentorposologia {
+    border-radius: 0 .28571429rem .28571429rem ;
+    padding: 3px;
+    background-color: #e2f3f9;
+}
+.conteudo {
+  background-color: #fff;
+  padding: 10px;
+}
+.doserecomendada {
+  padding: 10px;
+  border-radius: 3px;
+  border: 2px solid #145180;
+  background-color: #f1f1f1;
+  color: #145180;
+}
+input[name="peso"] {
+  width: 50px;
+  height: 35px;
+  font-size: 1.7em;
+  text-align: center;
+  border-radius: 3px;
+  border: 2px solid #f2711c;
+  outline: 0;
+}
+span.posologia {
+  color: orange;
+  font-weight: bold;
+}
+span.intervalo {
+  color: #fbac00;
+}

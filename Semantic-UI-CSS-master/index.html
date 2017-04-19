@@ -1,0 +1,148 @@
+<html>
+
+	<head>
+		<link rel="stylesheet" type="text/css" href="semantic.min.css">
+		<link rel="stylesheet" type="text/css" href="csspormiudos.css">
+		<script src="jquery-3.2.0.min.js"></script>
+		<script src="semantic.min.js"></script>
+
+		<meta charset="utf-8">
+	</head>
+
+	<body class="ui centered grid">
+		<div class="ten wide column">
+			<div class="ui small top attached menu">
+				<a class="header item">Início</a>
+				<a class="item">Fármacos</a>
+				<a class="item">Patologia</a>
+				<div class="right menu">
+					<div class="item">
+						<div class="ui transparent icon input">
+							<input type="text" placeholder="Pesquisar por fármaco ou patologia...">
+							<i class="search link icon"></i>
+						</div>
+					</div>
+				</div>
+			</div>
+
+
+			  	<div class="ui small bottom attached segment secondary horizontal segments">
+			  		<div class="ui segment">
+			  			<p>Paracetamol</p>
+			  		</div>
+			  		<div class="ui segment">
+			  			<p>Ibuprofeno</p>
+			  		</div>
+			  	</div>
+			  	<div class="ui category search">
+			  		<div class="ui icon input">
+			  			<input class="prompt" type="text" placeholder="Search countries...">
+			  			<i class="search icon"></i>
+			  		</div>
+			  		<div class="results"></div>
+			  	</div>
+
+			  	<select>
+  <optgroup label="Swedish Cars">
+    <option value="volvo">Volvo</option>
+    <option value="saab">Saab</option>
+  </optgroup>
+  <optgroup label="German Cars">
+    <option value="mercedes">Mercedes</option>
+    <option value="audi">Audi</option>
+  </optgroup>
+</select>
+
+			<div>
+				<div class="ui top attached blue secondary segment">
+					<h2 class="ui header">Amigdalite</h2>
+				</div>
+				<div class="ui attached segment">
+					<div class="ui top attached tabular menu">
+						<a class="active item" data-tab="first">1.ª Linha</a>
+						<a class="item" data-tooltip="Add users to your feed" data-position="top center" data-tab="second">Hipersensibilidade tipo 1</a>
+						<a class="item" data-tab="third">Hipersensibilidade não-tipo 1</a>
+					</div>
+					<div class="ui bottom attached active tab segment" data-tab="first">
+
+						<div class="ui grid">
+							<div class="four wide column farmacosesquerda">
+								<div class="ui vertical fluid left tabular menu">
+									<a class="item active" data-tab="amoxi">
+										Amoxicilina
+									</a>
+									<a class="item" data-tab="penic">
+										Penicilina G Benzatínica
+									</a>
+								</div>
+							</div>
+							<div class="twelve wide stretched column posologiasdireita">
+								<div class="ui tab active contentorposologia" data-tab="amoxi">
+									<div class="conteudo">
+
+							<div style="font-size: 1.5em; text-align:center;">
+								<div class="doserecomendada">
+									<span class="posologia">50</span>
+									 a 
+									 <span class="posologia">100</span> 
+									 mg/kg/dia, de 
+									 <i class="arrow left icon" style="color:#bdbdbd;"></i><span style="border-bottom: 1px dotted white;">
+									 <span class="intervalo">12</span> em <span class="intervalo">12</span></span> <i class="arrow right icon" style="color:#bdbdbd"></i>horas
+								</div>
+								<div class="ui horizontal divider">
+									<i class="chevron down icon grey"></i>
+									Para um peso de <input name="peso" maxlength="3"> Kg
+									<i class="chevron down icon grey"></i>
+								</div>
+
+								<div class="ui segment stackable secondary blue fluid" style="font-size:1.1em; color: black; padding: 10px 0;">
+
+									<span>5 ml</span> de amoxicilina<i class="toggle circle left icon" style="color:lightgrey;"></i><span style="border-bottom: 1px dotted blue;"><span style="font-weight:bold; color:teal;">250</span> mg/ 5 ml </span><i class="toggle circle right icon" style="color:lightgrey;"></i>
+									</div>
+							</div>
+							</div>
+
+								</div>
+								<div class="ui tab contentorposologia" data-tab="penic">
+									<div class="conteudo">
+
+							<div style="font-size: 1.5em; text-align:center;">
+								<div class="doserecomendada">
+									&lt; 27 KG:
+								<span style="border-bottom: 1px dotted blue; font-weight: bold; color: #000;">1.200.000</span> UI, &gt; 27kg: <span style="border-bottom: 1px dotted blue; font-weight: bold; color: #000;">2.400.000</span> UI
+							</div>
+								<div class="ui horizontal divider">
+									<i class="chevron down icon grey"></i>
+									Para um peso de <input name="peso" maxlength="3"> Kg
+									<i class="chevron down icon grey"></i>
+								</div>
+								<div class="ui segment stackable secondary blue fluid" style="font-size:1.1em; color: black; padding: 10px 0;">
+									<span>5 ml</span> de amoxicilina<i class="toggle circle left icon" style="color:lightgrey;"></i><span style="border-bottom: 1px dotted blue;"><span style="font-weight:bold; color:teal;">250</span> mg/ 5 ml </span><i class="toggle circle right icon" style="color:lightgrey;"></i>
+								</div>
+							</div>
+							</div>
+
+								</div>
+							</div>
+
+						</div>
+
+
+
+					</div>
+					<div class="ui bottom attached tab segment" data-tab="second">
+						Second
+					</div>
+					<div class="ui bottom attached tab segment" data-tab="third">
+						Third
+					</div>
+				</div>
+			</div>
+
+		</div>
+		<script type="text/javascript">
+			$('.menu .item').tab();
+		</script>
+	</body>
+	
+</html>

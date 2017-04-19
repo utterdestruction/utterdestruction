@@ -1,0 +1,112 @@
+<html>
+	<head>
+		<link rel="stylesheet" type="text/css" href="semantic.min.css">
+		<script src="jquery-3.2.0.min.js"></script>
+		<script src="semantic.min.js"></script>
+
+		<meta charset="utf-8">
+	</head>
+	<body>
+
+
+		<div class="ui text container">
+
+
+			<div class="ui menu">
+				<a class="header item">
+					Home
+				</a>
+				<a class="item">
+					Messages
+				</a>
+				<a class="item">
+					Friends
+				</a>
+				<div class="right menu">
+					<div class="item">
+						<div class="ui transparent icon input">
+							<input type="text" placeholder="Pesquisar por fármaco ou patologia...">
+							<i class="search link icon"></i>
+						</div>
+					</div>
+				</div>
+			</div>
+
+		</div>
+		<div class="ui text container margin">
+			<h2 class="ui top attached">Amigdalite</h2>
+		<div class="ui attached stackable tabular fluid menu">
+		  <a class="item active" data-tab="first">1.ª Linha</a>
+		  <a class="item dosehover fluid" data-tab="second" data-position="top center" data-variation="wide" data-html="Anafilaxia, broncospasmo, angioedema, urticária">Hipersensibilidade tipo 1</a>
+		  <a class="item" data-tab="third">Hipersensibilidade não-tipo 1</a>
+		</div>
+		<div class="ui bottom attached tab segment active" data-tab="first">
+
+				<div class="ui grid">
+					<div class="four wide column">
+						<div class="ui vertical fluid tabular menu">
+							<a class="active item" data-tab="amoxi">
+								Amoxicilina
+							</a>
+							<a class="item" data-tab="penic">
+								Penicilina
+							</a>
+						</div>
+					</div>
+					<div class="twelve wide stretched column active segment">
+						<div class="ui active tab" data-tab="amoxi">
+							<div style="font-size: 1.5em; text-align:center;">
+								<span class="dosehover" data-position="top center" data-html="Posologia NOC - DGS" style="border-bottom: 1px dotted blue; font-weight: bold; color: #000;">50</span>  a <span class="dosehover" data-position="top center" data-html="Posologia NOC - DGS" style="border-bottom: 1px dotted blue; font-weight: bold; color: #000;">100</span> mg/kg/dia, de <i class="toggle circle left icon" style="color:lightgrey;"></i><span style="border-bottom: 1px dotted blue;"><span style="font-weight:bold; color:teal;">8</span> em <span style="font-weight:bold; color:teal;">8</span></span> <i class="toggle circle right icon" style="color:lightgrey;"></i>horas
+								<div class="ui horizontal divider"><i class="chevron down icon grey"></i></div>
+								<div class="ui segment stackable secondary blue fluid" style="font-size:1.1em; color: black; padding: 10px 0;">
+									<span>5 ml</span> de amoxicilina<i class="toggle circle left icon" style="color:lightgrey;"></i><span style="border-bottom: 1px dotted blue;"><span style="font-weight:bold; color:teal;">250</span> mg/ 5 ml </span><i class="toggle circle right icon" style="color:lightgrey;"></i>
+								</div>
+
+							</div>
+						</div>
+						<div class="ui tab" data-tab="penic">
+							PENIC
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="ui bottom attached tab segment" data-tab="second">
+				werwer
+			</div>
+		<script type="text/javascript">
+			$('.menu .item').tab();
+			$('.dosehover').popup();
+			$('.ui.dropdown').dropdown();
+			var  content = [  {
+      title: 'Amoxicilina + Ácido Clavulânico',
+      description: 'Clavamox',
+    },
+    {
+      title: 'Cow',
+      description: 'Another Animal',
+    }
+    ,
+    {
+      title: 'Cowabunga',
+      description: 'Another Animal',
+    }
+  ]
+;
+$('.ui.search')
+  .search({
+    source : content,
+    searchFields   : [
+      'title', 'description'
+    ],
+    searchFullText: true,
+    selectFirstResult: true
+  })
+;
+
+$( ".ui.search" ).on( "onSelect", function() {
+  alert("selected!");
+});
+		</script>
+	</body>
+</html>
