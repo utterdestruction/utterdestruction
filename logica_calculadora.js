@@ -5,7 +5,7 @@
   });
 
   $(document).ready(function(){
-    $('input[name=barra_pesquisa]').focus();
+    $('input[name=peso]').focus();
 
     function fluidos_diarios (peso) {
       if(peso < 10) Daily_Vol = 100 * peso;
