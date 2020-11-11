@@ -4,9 +4,9 @@
 
 	<meta charset="UTF-8">
 	<title>Doses Trocadas por Miúdos</title>
-	<link rel="shortcut icon" type="image/png" href="favicon.ico"/>
+	<link rel="shortcut icon" type="image/png" href="favicon.ico" />
 	<link rel="stylesheet" href="css/style.css">
-	<link href='https://fonts.googleapis.com/css?family=Roboto:300,400,500,700' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Roboto:400,700' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" href="css/font-awesome.min.css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
 	<script src="logica_calculadora.js" type="text/javascript"></script>
@@ -18,52 +18,69 @@
 		<div class="main_title_bar">
 			<h1 id="page_title">Calculadora Doses Pediátricas</h1>
 			<div id="peso">
-					PESO &#10097;&#10097; <input type="text" name="peso" tabindex="2" maxlength="4" style=""/> KG &#10096;&#10096;
+				PESO &#10097;&#10097; <input type="text" name="peso" tabindex="2" maxlength="4" style="" /> KG
+				&#10096;&#10096;
 			</div>
 		</div>
 
 		<div id="inputs">
 			<div id="fluidos">
-					<div>
-						<span style="color: #f5a623;font-weight: bold;">Paracetamol</span> 40mg/ml <i class="fa fa-chevron-right" aria-hidden="true"></i> <b class="dose" data-dose-por-toma="0.25" style="color:white;">...</b> a <b class="dose" data-dose-por-toma="0.375" style="color:white;">...</b> mL/toma (6/6h)
-						&nbsp; &nbsp; | &nbsp; &nbsp;
-						<span style="color: #f5a623;font-weight: bold;">Ibuprofeno</span> 20mg/ml <i class="fa fa-chevron-right" aria-hidden="true"></i> <b class="dose" data-dose-por-toma="0.25" style="color:white;">...</b> a <b class="dose" data-dose-por-toma="0.5" style="color:white;">...</b> mL/toma (8/8h)
-					</div>
+				<div>
+					<span style="color: #f5a623;font-weight: bold;">Paracetamol</span> 40mg/ml <i
+						class="fa fa-chevron-right" aria-hidden="true"></i> <b class="dose" data-dose-por-toma="0.25"
+						style="color:white;">...</b> a <b class="dose" data-dose-por-toma="0.375"
+						style="color:white;">...</b> mL/toma (6/6h)
+					&nbsp; &nbsp; | &nbsp; &nbsp;
+					<span style="color: #f5a623;font-weight: bold;">Ibuprofeno</span> 20mg/ml <i
+						class="fa fa-chevron-right" aria-hidden="true"></i> <b class="dose" data-dose-por-toma="0.25"
+						style="color:white;">...</b> a <b class="dose" data-dose-por-toma="0.5"
+						style="color:white;">...</b> mL/toma (8/8h)
 				</div>
-				<div style="clear:both;"></div>
 			</div>
-			<div id="pesquisa_rapida">
-				<i class="fa fa-search" aria-hidden="true"></i>
-				<input type="text" name="barra_pesquisa" tabindex="1" placeholder="Digite aqui a patologia que procura..." />
-			</div>
+			<div style="clear:both;"></div>
+		</div>
+		<div id="pesquisa_rapida">
+			<i class="fa fa-search" aria-hidden="true"></i>
+			<input type="text" name="barra_pesquisa" tabindex="1"
+				placeholder="Digite aqui a patologia que procura..." />
+		</div>
 
 
 		<div class="patologia_container">
 
 			<div>
-				<div class="patologia"><h2>Amigdalite bacteriana</h2><div class="referencias">Referência<a href="https://www.dgs.pt/directrizes-da-dgs/normas-e-circulares-normativas/norma-n-0202012-de-26122012-png.aspx">NOC (020/2012)</a></div></div>
+				<div class="patologia">
+					<h2>Amigdalite bacteriana</h2>
+					<div class="referencias">Referência<a
+							href="https://www.dgs.pt/directrizes-da-dgs/normas-e-circulares-normativas/norma-n-0202012-de-26122012-png.aspx">NOC
+							(020/2012)</a></div>
+				</div>
 				<div class="farmacos">
 					<div class="linha1">
 						<div class="farmaco">
 							<div class="titulo_farmaco">
-								<span class="nome_farmaco">Amoxicilina</span> <span class="posologia_base">50 mg/kg/dia, 12/12h, 10 dias</span>
+								<span class="nome_farmaco">Amoxicilina</span> <span class="posologia_base">50 mg/kg/dia,
+									12/12h, 10 dias</span>
 							</div>
-							<div class="posologia_calculada"><span class="formulacao">250 mg/5 ml</span><b class="dose" data-dose-por-toma="0.5">...</b> ml, de 12 em 12 horas, durante 10 dias</div>
-							<div class="posologia_calculada"><span class="formulacao">500 mg/5 ml</span><b class="dose" data-dose-por-toma="0.25">...</b> ml, de 12 em 12 horas, durante 10 dias</div>
-							
+							<div class="posologia_calculada"><span class="formulacao">250 mg/5 ml</span><b class="dose"
+									data-dose-por-toma="0.5">...</b> ml, de 12 em 12 horas, durante 10 dias</div>
+							<div class="posologia_calculada"><span class="formulacao">500 mg/5 ml</span><b class="dose"
+									data-dose-por-toma="0.25">...</b> ml, de 12 em 12 horas, durante 10 dias</div>
+
 						</div>
 
-						
+
 
 						<div class="farmaco">
 							<div class="titulo_farmaco">
 								<span class="nome_farmaco">Penicilina G benzatínica</span>
 								<span class="posologia_base">&lt; 27kg:600.000 U, ≥27kg: 1.200.000 U (I.M.)</span>
 							</div>
-							<div class="posologia_calculada"><span class="formulacao pesopenicilina">Peso</span><b class="penicilina">...</b> UI, toma única</div>
+							<div class="posologia_calculada"><span class="formulacao pesopenicilina">Peso</span><b
+									class="penicilina">...</b> UI, toma única</div>
 						</div>
 					</div>
-			
+
 					<div class="linha2 amigdalitehs1">
 						<div class="farmaco">
 							<div class="titulo_farmaco">
@@ -79,7 +96,7 @@
 								<b class="dose" data-dose-por-toma="0.15">...</b> ml, de 12 em 12 horas, durante 10 dias
 							</div>
 						</div>
-						
+
 						<div class="farmaco">
 							<div class="titulo_farmaco">
 								<span class="nome_farmaco">Eritromicina </span>
@@ -87,10 +104,11 @@
 							</div>
 							<div class="posologia_calculada">
 								<span class="formulacao">250 mg/5 ml</span>
-								<b class="dose" data-dose-por-toma="0.33333">...</b> ml, de 8 em 8 horas, durante 10 dias
+								<b class="dose" data-dose-por-toma="0.33333">...</b> ml, de 8 em 8 horas, durante 10
+								dias
 							</div>
 						</div>
-						
+
 						<div class="farmaco">
 							<div class="titulo_farmaco">
 								<span class="nome_farmaco">Azitromicina</span>
@@ -101,7 +119,7 @@
 								<b class="dose" data-dose-por-toma="0.3">...</b> ml, de 24 em 24 horas, durante 5 dias
 							</div>
 						</div>
-						
+
 						<!-- <div class="farmaco">
 							<div class="titulo_farmaco nao_disponivel">
 								<span class="nome_farmaco">Clindamicina</span>
@@ -117,57 +135,69 @@
 								<span class="posologia_base">30 mg/kg/dia, 24/24h, 10 dias</span>
 							</div>
 						</div> -->
-					
+
 						<div class="farmaco">
 							<div class="titulo_farmaco">
 								<span class="nome_farmaco">Cefeprozil</span>
 								<span class="posologia_base">15-30 mg/kg/dia, 12/12h, 10 dias</span>
 							</div>
-							<div class="posologia_calculada"><span class="formulacao">250 mg/5 ml</span><b class="dose" data-dose-por-toma="0.3">...</b> ml, de 12 em 12 horas, durante 10 dias</div>
+							<div class="posologia_calculada"><span class="formulacao">250 mg/5 ml</span><b class="dose"
+									data-dose-por-toma="0.3">...</b> ml, de 12 em 12 horas, durante 10 dias</div>
 						</div>
-					
+
 						<div class="farmaco">
 							<div class="titulo_farmaco">
 								<span class="nome_farmaco">Cefuroxima-axetil</span>
 								<span class="posologia_base">20-30 mg/kg/dia, 12/12h, 10 dias</span>
 							</div>
-							<div class="posologia_calculada"><span class="formulacao">125 mg/5 ml</span><b class="dose" data-dose-por-toma="0.6">...</b> ml, de 12 em 12 horas, durante 10 dias</div>
-							<div class="posologia_calculada"><span class="formulacao">250 mg/5 ml</span><b class="dose" data-dose-por-toma="0.3">...</b> ml, de 12 em 12 horas, durante 10 dias</div>
-					</div>
+							<div class="posologia_calculada"><span class="formulacao">125 mg/5 ml</span><b class="dose"
+									data-dose-por-toma="0.6">...</b> ml, de 12 em 12 horas, durante 10 dias</div>
+							<div class="posologia_calculada"><span class="formulacao">250 mg/5 ml</span><b class="dose"
+									data-dose-por-toma="0.3">...</b> ml, de 12 em 12 horas, durante 10 dias</div>
+						</div>
 					</div>
 				</div>
 			</div>
 
-<div>
-				<div class="patologia"><h2>Otite Média Aguda</h2>
-					<div class="referencias">Referência<a href="https://www.dgs.pt/directrizes-da-dgs/normas-e-circulares-normativas/norma-n-0072012-de-16122012-png.aspx">NOC (007/2012)</a></div></div>
-					<div class="farmacos">
-						<div class="linha1">
+			<div>
+				<div class="patologia">
+					<h2>Otite Média Aguda</h2>
+					<div class="referencias">Referência<a
+							href="https://www.dgs.pt/directrizes-da-dgs/normas-e-circulares-normativas/norma-n-0072012-de-16122012-png.aspx">NOC
+							(007/2012)</a></div>
+				</div>
+				<div class="farmacos">
+					<div class="linha1">
 
-							<div class="farmaco">
-								<div class="titulo_farmaco">
-									<span class="nome_farmaco">Amoxicilina</span> <span class="posologia_base">80-90 mg/kg/dia, 12/12h, 5-7 dias</span>
-								</div>
-								<div class="posologia_calculada"><span class="formulacao">250 mg/5 ml</span><b class="dose" data-dose-por-toma="0.8">...</b> ml, de 12 em 12 horas, durante 5/7 dias</div>
-								<div class="posologia_calculada"><span class="formulacao">500 mg/5 ml</span><b class="dose" data-dose-por-toma="0.4">...</b> ml, de 12 em 12 horas, durante 5/7 dias</div>
+						<div class="farmaco">
+							<div class="titulo_farmaco">
+								<span class="nome_farmaco">Amoxicilina</span> <span class="posologia_base">80-90
+									mg/kg/dia, 12/12h, 5-7 dias</span>
 							</div>
+							<div class="posologia_calculada"><span class="formulacao">250 mg/5 ml</span><b class="dose"
+									data-dose-por-toma="0.8">...</b> ml, de 12 em 12 horas, durante 5/7 dias</div>
+							<div class="posologia_calculada"><span class="formulacao">500 mg/5 ml</span><b class="dose"
+									data-dose-por-toma="0.4">...</b> ml, de 12 em 12 horas, durante 5/7 dias</div>
+						</div>
+					</div>
+
+					<div class="linha2">
+
+						<div class="farmaco">
+							<div class="titulo_farmaco">
+								<span class="nome_farmaco">Amoxicilina + Ácido Clavulânico (14:1)</span>
+								<span class="posologia_base">80-90 mg/kg/dia, 12/12h, 5-7 dias</span>
+							</div>
+							<div class="posologia_calculada"><span class="formulacao">600:42,9 mg/5 ml</span><b
+									class="dose" data-dose-por-toma="0.375">...</b> ml, de 12 em 12 horas, durante 5-7
+								dias</div>
 						</div>
 
-						<div class="linha2">
 
-							<div class="farmaco">
-								<div class="titulo_farmaco">
-									<span class="nome_farmaco">Amoxicilina + Ácido Clavulânico (14:1)</span>
-									<span class="posologia_base">80-90 mg/kg/dia, 12/12h, 5-7 dias</span>
-								</div>
-								<div class="posologia_calculada"><span class="formulacao">600:42,9 mg/5 ml</span><b class="dose" data-dose-por-toma="0.375">...</b> ml, de 12 em 12 horas, durante 5-7 dias</div>
-							</div>
-						
-						
-							<div class="farmaco">
-								<div class="titulo_farmaco">
-									<span class="nome_farmaco">Cefuroxima</span>
-									<span class="posologia_base">30mg/Kg/dia, 12/12h, 5-7 dias</span>
+						<div class="farmaco">
+							<div class="titulo_farmaco">
+								<span class="nome_farmaco">Cefuroxima</span>
+								<span class="posologia_base">30mg/Kg/dia, 12/12h, 5-7 dias</span>
 							</div>
 							<div class="posologia_calculada">
 								<span class="formulacao">125 mg/5 ml</span>
@@ -179,11 +209,12 @@
 							</div>
 							<div class="posologia_calculada">
 								<span class="formulacao">500 mg/5 ml</span>
-								<b class="dose" data-dose-por-toma="0.15">...</b> ml, de 12 em 12 horas, durante 5/7 dias
+								<b class="dose" data-dose-por-toma="0.15">...</b> ml, de 12 em 12 horas, durante 5/7
+								dias
 							</div>
 						</div>
 
-						</div>
+					</div>
 
 					<div class="linha2 amigdalitehs1">
 						<div class="farmaco">
@@ -197,10 +228,11 @@
 							</div>
 							<div class="posologia_calculada">
 								<span class="formulacao">50 mg/ml</span>
-								<b class="dose" data-dose-por-toma="0.15">...</b> ml, de 12 em 12 horas, durante 5/7 dias
+								<b class="dose" data-dose-por-toma="0.15">...</b> ml, de 12 em 12 horas, durante 5/7
+								dias
 							</div>
 						</div>
-						
+
 						<div class="farmaco">
 							<div class="titulo_farmaco">
 								<span class="nome_farmaco">Eritromicina </span>
@@ -208,10 +240,11 @@
 							</div>
 							<div class="posologia_calculada">
 								<span class="formulacao">250 mg/5 ml</span>
-								<b class="dose" data-dose-por-toma="0.33333">...</b> ml, de 8 em 8 horas, durante 5/7 dias
+								<b class="dose" data-dose-por-toma="0.33333">...</b> ml, de 8 em 8 horas, durante 5/7
+								dias
 							</div>
 						</div>
-						
+
 						<div class="farmaco">
 							<div class="titulo_farmaco">
 								<span class="nome_farmaco">Azitromicina</span>
@@ -222,57 +255,64 @@
 								<b class="dose" data-dose-por-toma="0.25">...</b> ml, de 24 em 24 horas, durante 3 dias
 							</div>
 						</div>
-						
-					</div>
+
 					</div>
 				</div>
+			</div>
 
-				<div>
-					<div class="patologia"><h2>Otite Externa</h2></div>
-					<div class="farmacos">
-						<div class="linha1">
-							<div class="titulo_farmaco">
-								<span class="nome_farmaco">Ofloxacina (Ottoflox®)</span>
-								<span class="posologia_base">5 gotas, 24/24h, 7-14 dias</span>
-							</div>
+			<div>
+				<div class="patologia">
+					<h2>Otite Externa</h2>
+				</div>
+				<div class="farmacos">
+					<div class="linha1">
+						<div class="titulo_farmaco">
+							<span class="nome_farmaco">Ofloxacina (Ottoflox®)</span>
+							<span class="posologia_base">5 gotas, 24/24h, 7-14 dias</span>
+						</div>
 
-							
 
-							<div class="titulo_farmaco">
-								<span class="nome_farmaco">Neomicina + Polimixina B + Hidrocortisona (Otosporin®)</span>
-								<span class="posologia_base">2 gotas, 6/6h, 7 dias</span>
-							</div>
 
-							
+						<div class="titulo_farmaco">
+							<span class="nome_farmaco">Neomicina + Polimixina B + Hidrocortisona (Otosporin®)</span>
+							<span class="posologia_base">2 gotas, 6/6h, 7 dias</span>
+						</div>
 
-							<div class="titulo_farmaco">
-								<span class="nome_farmaco">Neomicina + Polimixina B + Dexametasona (Polydexa®)</span>
-								<span class="posologia_base">1-2 gotas, 12/12h, 7 dias</span>
-							</div>
+
+
+						<div class="titulo_farmaco">
+							<span class="nome_farmaco">Neomicina + Polimixina B + Dexametasona (Polydexa®)</span>
+							<span class="posologia_base">1-2 gotas, 12/12h, 7 dias</span>
 						</div>
 					</div>
 				</div>
+			</div>
 
-				<div>
-					<div class="patologia"><h2>Varicela</h2></div>
-					<div class="farmacos">
-						<div class="linha1">
-							<div class="titulo_farmaco">
-								<span class="nome_farmaco">Aciclovir</span>
-								<span class="posologia_base">20mg/Kg/dose, 6/6h, 5 dias (Iniciar nas primeiras 24h da erupção)</span>
-							</div>
-							<div class="posologia_calculada">
-								<span class="formulacao">80 mg/ ml</span>
-								<b class="dose" data-dose-por-toma="0.25">...</b> ml, de 6 em 6 horas, durante 5 dias
-							</div>
+			<div>
+				<div class="patologia">
+					<h2>Varicela</h2>
+				</div>
+				<div class="farmacos">
+					<div class="linha1">
+						<div class="titulo_farmaco">
+							<span class="nome_farmaco">Aciclovir</span>
+							<span class="posologia_base">20mg/Kg/dose, 6/6h, 5 dias (Iniciar nas primeiras 24h da
+								erupção)</span>
+						</div>
+						<div class="posologia_calculada">
+							<span class="formulacao">80 mg/ ml</span>
+							<b class="dose" data-dose-por-toma="0.25">...</b> ml, de 6 em 6 horas, durante 5 dias
 						</div>
 					</div>
 				</div>
+			</div>
 
 
 
 			<div>
-				<div class="patologia"><h2>Rinossinusite aguda bacteriana</h2></div>
+				<div class="patologia">
+					<h2>Rinossinusite aguda bacteriana</h2>
+				</div>
 				<div class="farmacos">
 					<div class="linha1">
 						<div class="farmaco">
@@ -281,10 +321,12 @@
 								<span class="posologia_base">90mg/Kg/dia, 12/12h, 10-14 dias</span>
 							</div>
 							<div class="posologia_calculada">
-								<span class="formulacao">250 mg/5 ml</span><b class="dose" data-dose-por-toma="0.9">...</b> ml, de 12 em 12 horas, durante 10 a 14 dias
+								<span class="formulacao">250 mg/5 ml</span><b class="dose"
+									data-dose-por-toma="0.9">...</b> ml, de 12 em 12 horas, durante 10 a 14 dias
 							</div>
 							<div class="posologia_calculada">
-								<span class="formulacao">500 mg/5 ml</span><b class="dose" data-dose-por-toma="0.45">...</b> ml, de 12 em 12 horas, durante 10 a 14 dias
+								<span class="formulacao">500 mg/5 ml</span><b class="dose"
+									data-dose-por-toma="0.45">...</b> ml, de 12 em 12 horas, durante 10 a 14 dias
 							</div>
 						</div>
 					</div>
@@ -296,23 +338,28 @@
 								<span class="posologia_base">15mg/Kg/dia, 12/12h, 14-21 dias</span>
 							</div>
 							<div class="posologia_calculada">
-								<span class="formulacao">25 mg/ml</span><b class="dose" data-dose-por-toma="0.3">...</b> ml, de 12 em 12 horas, durante 14 a 21 dias
+								<span class="formulacao">25 mg/ml</span><b class="dose" data-dose-por-toma="0.3">...</b>
+								ml, de 12 em 12 horas, durante 14 a 21 dias
 							</div>
 							<div class="posologia_calculada">
-								<span class="formulacao">50 mg/ml</span><b class="dose" data-dose-por-toma="0.15">...</b> ml, de 12 em 12 horas, durante 14 a 21 dias
+								<span class="formulacao">50 mg/ml</span><b class="dose"
+									data-dose-por-toma="0.15">...</b> ml, de 12 em 12 horas, durante 14 a 21 dias
 							</div>
 						</div>
 
-						
+
 
 						<div class="farmaco">
 							<div class="titulo_farmaco">
 								<span class="nome_farmaco">Cefuroxima-axetil</span>
 								<span class="posologia_base">30mg/Kg/dia, 12/12h, 14-21 dias</span>
 							</div>
-							<div class="posologia_calculada"><span class="formulacao">125 mg/5 ml</span><b class="dose" data-dose-por-toma="0.6">...</b> ml, de 12 em 12 horas, durante 14 a 21 dias</div>
-							<div class="posologia_calculada"><span class="formulacao">250 mg/5 ml</span><b class="dose" data-dose-por-toma="0.3">...</b> ml, de 12 em 12 horas, durante 14 a 21 dias</div>
-							<div class="posologia_calculada"><span class="formulacao">500 mg/5 ml</span><b class="dose" data-dose-por-toma="0.15">...</b> ml, de 12 em 12 horas, durante 14 a 21 dias</div>
+							<div class="posologia_calculada"><span class="formulacao">125 mg/5 ml</span><b class="dose"
+									data-dose-por-toma="0.6">...</b> ml, de 12 em 12 horas, durante 14 a 21 dias</div>
+							<div class="posologia_calculada"><span class="formulacao">250 mg/5 ml</span><b class="dose"
+									data-dose-por-toma="0.3">...</b> ml, de 12 em 12 horas, durante 14 a 21 dias</div>
+							<div class="posologia_calculada"><span class="formulacao">500 mg/5 ml</span><b class="dose"
+									data-dose-por-toma="0.15">...</b> ml, de 12 em 12 horas, durante 14 a 21 dias</div>
 						</div>
 
 					</div>
@@ -321,196 +368,225 @@
 
 
 
-			
 
-				<div>
-					<div class="patologia"><h2>Pneumonia Adquirida na Comunidade (PAC)</h2>
-						<div class="referencias">Referência<a href="https://www.dgs.pt/directrizes-da-dgs/normas-e-circulares-normativas/norma-n-0192012-de-26122012-png.aspx">NOC (019/2012)</a></div></div>
-						<div class="farmacos">
-							<div class="linha1">
-								<div class="farmaco">
-									<div class="titulo_farmaco">
-										<span class="nome_farmaco">Amoxicilina</span> <span class="posologia_base">80-100 mg/kg/dia, 8/8h, 7-10 dias</span>
-									</div>
-									<div class="posologia_calculada"><span class="formulacao">250 mg/5 ml</span><b class="dose" data-dose-por-toma="0.5333">...</b> a <b class="dose" data-dose-por-toma="0.667">...</b>ml, de 8 em 8 horas, durante 7-10 dias</div>
-									<div class="posologia_calculada"><span class="formulacao">500 mg/5 ml</span><b class="dose" data-dose-por-toma="0.266">...</b> a <b class="dose" data-dose-por-toma="0.333">...</b> ml, de 8 em 8 horas, durante 7-10 dias</div>
-							
-								</div>
 
-								<div class="farmaco">
-									<div class="titulo_farmaco">
-										<span class="nome_farmaco">Amoxicilina + Ácido Clavulânico</span>
-										<span class="posologia_base">75-90mg/Kg/dia, 8/8h, 7-10 dias</span>
-									</div>
+			<div>
+				<div class="patologia">
+					<h2>Pneumonia Adquirida na Comunidade (PAC)</h2>
+					<div class="referencias">Referência<a
+							href="https://www.dgs.pt/directrizes-da-dgs/normas-e-circulares-normativas/norma-n-0192012-de-26122012-png.aspx">NOC
+							(019/2012)</a></div>
+				</div>
+				<div class="farmacos">
+					<div class="linha1">
+						<div class="farmaco">
+							<div class="titulo_farmaco">
+								<span class="nome_farmaco">Amoxicilina</span> <span class="posologia_base">80-100
+									mg/kg/dia, 8/8h, 7-10 dias</span>
 							</div>
-
-
-
-							<div class="linha2">
-
-								<div class="farmaco">
-									<div class="titulo_farmaco">
-										<span class="nome_farmaco">Eritromicina </span>
-										<span class="posologia_base">40mg/Kg/dia (oral ou E.V.), 6/6h, 14 dias</span>
-									</div>
-									<div class="posologia_calculada">
-										<span class="formulacao">250 mg/5 ml</span>
-										<b class="dose" data-dose-por-toma="0.33333">...</b> ml, de 6 em 6 horas, durante 14 dias
-									</div>
-								</div>
-
-								
-
-								<div class="farmaco">
-									<div class="titulo_farmaco">
-										<span class="nome_farmaco">Azitromicina</span>
-										<span class="posologia_base">10mg/Kg/dia, 24/24h, 3 dias</span>
-									</div>
-									<div class="posologia_calculada">
-										<span class="formulacao">40 mg/ml</span>
-										<b class="dose" data-dose-por-toma="0.25">...</b> ml, de 24 em 24 horas, durante 5 dias
-									</div>
-								</div>
-
-								
-
-								<div class="farmaco">
-									<div class="titulo_farmaco">
-										<span class="nome_farmaco">Claritromicina</span>
-										<span class="posologia_base">15mg/Kg/dia (oral ou E.V.), 12/12h, 14 dias</span>
-									</div>
-									<div class="posologia_calculada">
-										<span class="formulacao">25 mg/ml</span>
-										<b class="dose" data-dose-por-toma="0.3">...</b> ml, de 12 em 12 horas, durante 14 dias
-									</div>
-								</div>
-
-							</div>
+							<div class="posologia_calculada"><span class="formulacao">250 mg/5 ml</span><b class="dose"
+									data-dose-por-toma="0.5333">...</b> a <b class="dose"
+									data-dose-por-toma="0.667">...</b>ml, de 8 em 8 horas, durante 7-10 dias</div>
+							<div class="posologia_calculada"><span class="formulacao">500 mg/5 ml</span><b class="dose"
+									data-dose-por-toma="0.266">...</b> a <b class="dose"
+									data-dose-por-toma="0.333">...</b> ml, de 8 em 8 horas, durante 7-10 dias</div>
 
 						</div>
-					</div>
-				</div>
 
-					<div>
-						<div class="patologia"><h2>Adenite</h2></div>
-						<div class="farmacos">
-							<div class="linha1">
+						<div class="farmaco">
+							<div class="titulo_farmaco">
+								<span class="nome_farmaco">Amoxicilina + Ácido Clavulânico</span>
+								<span class="posologia_base">75-90mg/Kg/dia, 8/8h, 7-10 dias</span>
+							</div>
+						</div>
+
+
+
+						<div class="linha2">
+
+							<div class="farmaco">
 								<div class="titulo_farmaco">
-									<span class="nome_farmaco">Amoxicilina + Ácido Clavulânico</span>
-									<span class="posologia_base">40 mg/Kg/dia, 8/8h, 10 dias</span>
+									<span class="nome_farmaco">Eritromicina </span>
+									<span class="posologia_base">40mg/Kg/dia (oral ou E.V.), 6/6h, 14 dias</span>
 								</div>
-								
-								<div class="titulo_farmaco">
-									<span class="nome_farmaco">Flucloxacilina</span>
-									<span class="posologia_base">50 mg/Kg/dia, 6/6h ou 8/8h, 10 dias</span>
+								<div class="posologia_calculada">
+									<span class="formulacao">250 mg/5 ml</span>
+									<b class="dose" data-dose-por-toma="0.33333">...</b> ml, de 6 em 6 horas, durante 14
+									dias
 								</div>
 							</div>
-							<div class="linha2">
+
+
+
+							<div class="farmaco">
+								<div class="titulo_farmaco">
+									<span class="nome_farmaco">Azitromicina</span>
+									<span class="posologia_base">10mg/Kg/dia, 24/24h, 3 dias</span>
+								</div>
+								<div class="posologia_calculada">
+									<span class="formulacao">40 mg/ml</span>
+									<b class="dose" data-dose-por-toma="0.25">...</b> ml, de 24 em 24 horas, durante 5
+									dias
+								</div>
+							</div>
+
+
+
+							<div class="farmaco">
 								<div class="titulo_farmaco">
 									<span class="nome_farmaco">Claritromicina</span>
-									<span class="posologia_base">15mg/Kg/dia, 12/12h, 10 dias</span>
+									<span class="posologia_base">15mg/Kg/dia (oral ou E.V.), 12/12h, 14 dias</span>
+								</div>
+								<div class="posologia_calculada">
+									<span class="formulacao">25 mg/ml</span>
+									<b class="dose" data-dose-por-toma="0.3">...</b> ml, de 12 em 12 horas, durante 14
+									dias
 								</div>
 							</div>
+
 						</div>
+
 					</div>
-
-					<div>
-						<div class="patologia"><h2>Infeção do trato urinário (ITU)</h2>
-							<div class="referencias">Referência<a href="https://www.dgs.pt/directrizes-da-dgs/normas-e-circulares-normativas/norma-n-0082012-de-16122012-pdf.aspx">NOC (008/2012)</a></div></div>
-							<div class="farmacos">
-								<div class="linha1">
-									<div class="farmaco">
-										<div class="titulo_farmaco">
-											<span class="nome_farmaco">Amoxicilina + Ácido clavulânico</span>
-											<span class="posologia_base">20-40mg/kg/dia (8/8h) OU 25-45 mg/kg/dia (12/12h) durante 2-4 dias (sem febre), 7-14 dias (com febre)</span>
-										</div>
-										<div class="posologia_calculada" style="display: block;"><span class="formulacao">400+57 mg/5 ml</span><b class="dose" data-dose-por-toma="0.28125">...</b> ml, de 12 em 12 horas, durante 3-4 dias (ITU não febril) OU 7-14 dias na ITU febril.</div>
-										
-									</div>
-
-									
-
-									<div class="titulo_farmaco">
-										<span class="nome_farmaco">Cefuroxima-axetil</span>
-										<span class="posologia_base">20-30mg/Kg/dia, 12/12h, 2-4dias (sem febre), 7-14dias (com febre)</span>
-									</div>
-								</div>
-								<div class="linha2">
-									<div class="titulo_farmaco">
-										<span class="nome_farmaco">Fosfomicina</span>
-										<span class="posologia_base">3000mg, Única</span>
-									</div>
-								</div>
-								<div class="linha2">
-									<div class="titulo_farmaco">
-										<span class="nome_farmaco">Amoxicilina+ Ácido clavulânico</span>
-										<span class="posologia_base">50mg/Kg/dia, 8/8h</span>
-									</div>
-								</div>
-								<div class="linha2">
-									<div class="titulo_farmaco">
-										<span class="nome_farmaco">Cefuroxima-axetil</span>
-										<span class="posologia_base">30-40mg/Kg/dia, 12/12h</span>
-									</div>
-								</div>
-							</div>
-						</div>
-
-						<div>
-							<div class="patologia"><h2>Candidíase perineal</h2></div>
-							<div class="farmacos">
-								<div class="linha1">
-									<div class="titulo_farmaco">
-										<span class="nome_farmaco">Clotrimazol 1%</span>
-										<span class="posologia_base">Tópica-cutânea qb, 12/12h, 7dias</span>
-									</div>
-								</div>
-							</div>
-						</div>
-
-						<div>
-							<div class="patologia"><h2>Candidíase oral</h2></div>
-							<div class="farmacos">
-								<div class="linha1">
-									<div class="titulo_farmaco">
-										<span class="nome_farmaco">Nistatina oral 1mL/dose</span>
-										<span class="posologia_base">(aplicar após as refeições), 6/6h, 7 dias</span>
-									</div>
-
-									
-
-									<div class="titulo_farmaco">
-										<span class="nome_farmaco">Miconazol (Gel bucal)</span>
-										<span class="posologia_base">12/12h, 7 dias</span>
-									</div>
-								</div>
-							</div>
-						</div>
-
-						<div>
-							<div class="patologia"><h2>Conjuntivite do Lactente</h2></div>
-							<div class="farmacos">
-								<div class="linha1">
-									<div class="titulo_farmaco">
-										<span class="nome_farmaco">Oxitetraciclina</span>
-										<span class="posologia_base">Pomada qb, 8/8h 7dias</span>
-									</div>
-
-									
-
-									<div class="titulo_farmaco">
-										<span class="nome_farmaco">Cloranfenicol (colírio)</span>
-										<span class="posologia_base">1 gota 2/2h 7dias</span>
-									</div>
-									<div class="titulo_farmaco">
-										<span class="nome_farmaco">Cloranfenicol (pomada)</span>
-										<span class="posologia_base">qb 24/24h (ao deitar) 7dias</span>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-
 				</div>
-			</body>
-			</html>
+			</div>
+
+			<div>
+				<div class="patologia">
+					<h2>Adenite</h2>
+				</div>
+				<div class="farmacos">
+					<div class="linha1">
+						<div class="titulo_farmaco">
+							<span class="nome_farmaco">Amoxicilina + Ácido Clavulânico</span>
+							<span class="posologia_base">40 mg/Kg/dia, 8/8h, 10 dias</span>
+						</div>
+
+						<div class="titulo_farmaco">
+							<span class="nome_farmaco">Flucloxacilina</span>
+							<span class="posologia_base">50 mg/Kg/dia, 6/6h ou 8/8h, 10 dias</span>
+						</div>
+					</div>
+					<div class="linha2">
+						<div class="titulo_farmaco">
+							<span class="nome_farmaco">Claritromicina</span>
+							<span class="posologia_base">15mg/Kg/dia, 12/12h, 10 dias</span>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div>
+				<div class="patologia">
+					<h2>Infeção do trato urinário (ITU)</h2>
+					<div class="referencias">Referência<a
+							href="https://www.dgs.pt/directrizes-da-dgs/normas-e-circulares-normativas/norma-n-0082012-de-16122012-pdf.aspx">NOC
+							(008/2012)</a></div>
+				</div>
+				<div class="farmacos">
+					<div class="linha1">
+						<div class="farmaco">
+							<div class="titulo_farmaco">
+								<span class="nome_farmaco">Amoxicilina + Ácido clavulânico</span>
+								<span class="posologia_base">20-40mg/kg/dia (8/8h) OU 25-45 mg/kg/dia (12/12h) durante
+									2-4 dias (sem febre), 7-14 dias (com febre)</span>
+							</div>
+							<div class="posologia_calculada" style="display: block;"><span class="formulacao">400+57
+									mg/5 ml</span><b class="dose" data-dose-por-toma="0.28125">...</b> ml, de 12 em 12
+								horas, durante 3-4 dias (ITU não febril) OU 7-14 dias na ITU febril.</div>
+
+						</div>
+
+
+
+						<div class="titulo_farmaco">
+							<span class="nome_farmaco">Cefuroxima-axetil</span>
+							<span class="posologia_base">20-30mg/Kg/dia, 12/12h, 2-4dias (sem febre), 7-14dias (com
+								febre)</span>
+						</div>
+					</div>
+					<div class="linha2">
+						<div class="titulo_farmaco">
+							<span class="nome_farmaco">Fosfomicina</span>
+							<span class="posologia_base">3000mg, Única</span>
+						</div>
+					</div>
+					<div class="linha2">
+						<div class="titulo_farmaco">
+							<span class="nome_farmaco">Amoxicilina+ Ácido clavulânico</span>
+							<span class="posologia_base">50mg/Kg/dia, 8/8h</span>
+						</div>
+					</div>
+					<div class="linha2">
+						<div class="titulo_farmaco">
+							<span class="nome_farmaco">Cefuroxima-axetil</span>
+							<span class="posologia_base">30-40mg/Kg/dia, 12/12h</span>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div>
+				<div class="patologia">
+					<h2>Candidíase perineal</h2>
+				</div>
+				<div class="farmacos">
+					<div class="linha1">
+						<div class="titulo_farmaco">
+							<span class="nome_farmaco">Clotrimazol 1%</span>
+							<span class="posologia_base">Tópica-cutânea qb, 12/12h, 7dias</span>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div>
+				<div class="patologia">
+					<h2>Candidíase oral</h2>
+				</div>
+				<div class="farmacos">
+					<div class="linha1">
+						<div class="titulo_farmaco">
+							<span class="nome_farmaco">Nistatina oral 1mL/dose</span>
+							<span class="posologia_base">(aplicar após as refeições), 6/6h, 7 dias</span>
+						</div>
+
+
+
+						<div class="titulo_farmaco">
+							<span class="nome_farmaco">Miconazol (Gel bucal)</span>
+							<span class="posologia_base">12/12h, 7 dias</span>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div>
+				<div class="patologia">
+					<h2>Conjuntivite do Lactente</h2>
+				</div>
+				<div class="farmacos">
+					<div class="linha1">
+						<div class="titulo_farmaco">
+							<span class="nome_farmaco">Oxitetraciclina</span>
+							<span class="posologia_base">Pomada qb, 8/8h 7dias</span>
+						</div>
+
+
+
+						<div class="titulo_farmaco">
+							<span class="nome_farmaco">Cloranfenicol (colírio)</span>
+							<span class="posologia_base">1 gota 2/2h 7dias</span>
+						</div>
+						<div class="titulo_farmaco">
+							<span class="nome_farmaco">Cloranfenicol (pomada)</span>
+							<span class="posologia_base">qb 24/24h (ao deitar) 7dias</span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+	</div>
+</body>
+
+</html>
