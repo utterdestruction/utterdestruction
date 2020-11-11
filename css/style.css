@@ -45,14 +45,13 @@ div.farmacos div.linha1{
 	div.farmacos div.linha1:before {
 		content: '1ª linha';
 		font-size: 0.95em;
-		font-weight: 300;
 		color: white;
 		padding: 4px 20px 4px 20px;
 		background-color: #f5a623;
 		display: inline-block;
 	}
 	span.nome_farmaco {
-		font-weight: 700;
+		font-weight: bold;
 		color: #fff;
 	}
 	span.nome_farmaco:before {
@@ -84,7 +83,7 @@ div.patologia_container div.patologia{
     margin: 0;
     color: #5E6977;
     background: #fff;
-    font-weight: 500;
+    font-weight: normal;
     font-size: 1em;
 }
 
@@ -113,7 +112,7 @@ div.patologia_container div.patologia{
 	    text-decoration: none;
 	    color: #404669;
 	    font-size: 1em;
-	    font-weight: 500;
+	    font-weight: normal;
 	    margin-left: 5px;
 	    line-height: 16px;
 	}
@@ -137,7 +136,7 @@ div.farmacos span.posologia_base{
 	color: #d9dbee;
 	text-transform:uppercase;
 	font-size: 0.85em;
-	font-weight: 400;
+	font-weight: normal;
 	line-height: 20px;
 }
 
@@ -145,7 +144,7 @@ div.posologia_calculada {
 	margin: 0px 0 0px 0px;
 	padding: 3px 0 3px 25px;
 	color: #f3f3f3;
-	font-weight: 400;
+	font-weight: bold;
 	font-size: 0.9em;
 	background-color: #656b9a;
 }
@@ -178,7 +177,7 @@ div.farmacos div.linha2{
 	div.farmacos div.linha2:before {
 		content: '2ª linha';
 		font-size: 0.95em;
-		font-weight: 300;
+		font-weight: normal;
 		color: white;
 		 background: #80B354;
 		 padding: 4px 20px 4px 20px;
@@ -287,7 +286,7 @@ div.main_title_bar {
 		width: 70%;
 		background-color: #fff;
     	color: #5E6977;
-    	font-weight: 500;
+    	font-weight: bold;
 		text-align: center;
 		font-size: 1.17em;
 		height: 45px;
